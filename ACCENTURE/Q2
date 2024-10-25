@@ -1,0 +1,34 @@
+// REMINDER WITH 718/12 = 4BA
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter base (n): ");
+        int n = input.nextInt();
+        
+        System.out.print("Enter number to convert: ");
+        int num = input.nextInt();
+        
+        String reminder = "";
+        
+        while (num > 0) {
+            int remainder = num % n;
+            if (remainder > 9) {
+                // For values greater than 9, convert to characters starting from 'A'
+                reminder = (char) (remainder - 10 + 'A') + reminder;
+            } else {
+                // Append numbers directly for 0-9
+                reminder = remainder + reminder;
+            }
+            num = num / n;
+        }
+        
+        System.out.println("Converted number: " + reminder);
+        
+        input.close();
+    }
+}
+
