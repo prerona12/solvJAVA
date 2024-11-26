@@ -1,0 +1,14 @@
+import java.util.*;
+class Emp{
+    int salary = 5000;
+}
+class eng extends Emp{
+    int benfit = 500;
+}
+class Main{
+    public static void main(String[] args){
+        eng r = new eng();
+        System.out.println(r.salary);
+        System.out.println(r.benfit);
+    }
+}
