@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        int n = 1234;
+        int prev =0;
+        while(n>0){
+            int div =n%10;
+            prev = div+prev*10;
+            n=n/10;
+        }
+        System.out.println(prev);
+    }
+}
