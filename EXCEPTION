@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        try{
+            int n=3/0;
+        }
+        catch(ArithmeticException n){
+            System.out.println("wrong");
+        }
+        catch(Exception n){
+            System.out.println("wrong4");
+        }
+    }
+}
