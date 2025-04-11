@@ -1,0 +1,35 @@
+//when array size is not given 
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String str = input.nextLine();
+		String num[] = str.split(" ");
+		ArrayList<Integer> list = new ArrayList<>();
+		for(String nums : num){
+		    list.add(Integer.parseInt(nums));
+		    
+		}
+		Collections.sort(list);
+        System.out.println(list.get(0));
+	}
+}
+//largest number
+//when array size is not given 
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String str = input.nextLine();
+		String num[] = str.split(" ");
+		ArrayList<Integer> list = new ArrayList<>();
+		for(String nums : num){
+		    list.add(Integer.parseInt(nums));
+		    
+		}
+		Collections.sort(list);
+        System.out.println(list.get(list.size() - 1));
+	}
+}
