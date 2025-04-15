@@ -1,3 +1,4 @@
+
 //sum of all prime number in the given range 
 
 import java.util.*;
@@ -26,3 +27,8 @@ public class Main {
         return true;
     }
 }
+
+
+
+
+// another DAG GRAGH PAPER WHICH IS VERY HARD I DIDN'Y TRY THAT OUT 
