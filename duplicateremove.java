@@ -37,3 +37,24 @@ public class Main {
         }
     }
 }
+// another way to do this 
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {2, 5, 2, 8, 5, 6, 8, 8};
+
+        // Convert array to set to remove duplicates
+        Set<Integer> set = new LinkedHashSet<>(); // maintains insertion order
+        for (int num : arr) {
+            set.add(num);
+        }
+
+        // Print unique elements
+        for (int num : set) {
+            System.out.print(num + " ");
+        }
+    }
+}
+// If you want the result back in an array:
+Integer[] uniqueArr = set.toArray(new Integer[0]);
