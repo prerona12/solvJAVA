@@ -29,3 +29,39 @@ public class Main {
         System.out.println(arr));
     }
 }
+//ascending first half then decending next half 
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int n = input.nextInt();
+        int[] arr = new int[n];
+
+        // Input elements
+        for (int i = 0; i < n; i++) {
+            arr[i] = input.nextInt();
+        }
+
+        // Sort the array
+        Arrays.sort(arr);
+
+        // Reverse the second half
+        int half = n / 2;
+        int left = half, right = n - 1;
+        while (left < right) {
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+            left++;
+            right--;
+        }
+
+        // Output result
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
