@@ -24,3 +24,28 @@ public class Main {
         System.out.println(Arrays.toString(arr));
     }
 }
+
+
+//strings input
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String str1 = input.nextLine();
+		String [] str = str1.split(" ");
+		int[] arr = new int[str.length];
+		int c=0;
+
+        // Convert string array to int array
+        for (int i = str.length-1; i >=0 ; i--) {
+            arr[c] = Integer.parseInt(str[i]);
+            c++;
+        }
+        
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+ " ");
+        }
+	}
+}
+
