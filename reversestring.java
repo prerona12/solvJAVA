@@ -13,7 +13,21 @@ public class Main
 		
 	}
 }
+//another wayeasy
 
+import java.util.*;
+import java.io.*;
+public class Main{
+    public static void main(String[] args) throws IOException{
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String str = reader.readLine();
+        String res ="";
+        for(int i=str.length()-1;i>=0;i--){
+            res = res+str.charAt(i);
+        }
+        System.out.println(res);
+    }
+}
 //when array size is not given 
 import java.util.*;
 public class Main
