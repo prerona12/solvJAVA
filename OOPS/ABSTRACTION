@@ -1,0 +1,23 @@
+import java.util.*;
+
+abstract class Geeks{
+    abstract void turnOn();
+    abstract void turnoff();
+}
+class TVRemote extends Geeks{
+    @Override
+    void turnOn(){
+        System.out.println("onn");
+    }
+    @Override
+    void turnoff(){
+        System.out.println("off");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+    Geeks remote = new TVRemote();
+        remote.turnOn();   
+        remote.turnoff();
+    }
+}
