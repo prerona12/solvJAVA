@@ -1,0 +1,19 @@
+import java.util.*;
+class one {
+    public void lolita(){
+       System.out.println("hi i am big sis"); 
+    }
+}
+class two extends one{
+    public void lili(){
+        System.out.println("hi i am lolita's sister");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+       two input = new two();
+       input.lili();
+       input.lolita();
+    }
+    
+}
